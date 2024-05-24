@@ -1,0 +1,21 @@
+package Chap13;
+
+import java.util.HashSet;
+
+public class Example04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<String> cats = new HashSet<String>();
+		cats.add("페르시안");
+		cats.add("샴");
+		System.out.println(cats);
+		cats.add("러시안블루"); //배열이 아니라 인덱스 없음=값이 들어가는 순서는 무관함, 중복된 값이 없다는 특징이 있음
+		System.out.println(cats);
+		cats.remove("페르시안");
+		System.out.println(cats);
+		System.out.println(cats.size());
+		System.out.println(cats.contains("샴"));
+	}
+
+}
